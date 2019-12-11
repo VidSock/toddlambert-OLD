@@ -10,4 +10,6 @@ featuredimage: /img/night211.jpg
 tags:
   - photo
 ---
+![](/img/night211.jpg)
+
 Utah - A clear night provides a great opportunity to show the movement of the earth along it's axis from this 78-image composite.
