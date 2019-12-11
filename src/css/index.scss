@@ -598,11 +598,11 @@ padding:0 0;
 }
 
 
-.header .logocolor{
+.logocolor{
 	color:#dd4000;
 	position:relative;
 }
-.header .logocolor:before{
+.logocolor:before{
 	content: '{';
 	color: #333;
 	font-size: 120%;
@@ -611,7 +611,7 @@ padding:0 0;
 	left:-15px;
 	font-weight: bold;
 }
-.header .logocolor:after{
+.logocolor:after{
 	content: '}';
 	color: #333;
 	font-size: 120%;
@@ -621,15 +621,17 @@ padding:0 0;
 	font-weight: bold;
 }
 
-.header .logolink{
+.header .logolink{}
+
+.logolink{
 font-family:Lobster Two; font-size:260%; color:#333; letter-spacing:1px; text-transform:lowercase;
 text-shadow: 0px 1px 4px white;
 padding-left:2rem;
 }
 
-.header .logofirst{padding-right:8px; position:relative;}
+.logofirst{padding-right:8px; position:relative; color:#333;}
 
-.header .logofirst:before{
+.logofirst:before{
 	content: ' . ';
 	color: #333;
 	font-size: 120%;
