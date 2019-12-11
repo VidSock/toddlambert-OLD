@@ -1,96 +1,132 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+// import logo from '../img/tw-logo-white.svg'
+import Headroom from "react-headroom"
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import { GoArrowUp } from 'react-icons/go'
+// import { GoTelescope } from 'react-icons/go'
+// import { GoGear } from 'react-icons/go'
+// import { FaQuestionCircle } from 'react-icons/fa'
+// import { AiFillBank } from 'react-icons/ai'
+// import { FaRegAddressCard, FaTelegramPlane } from 'react-icons/fa'
+
+// import PopContact from '../components/PopContact'
+// import ScrollAnimation from 'react-animate-on-scroll'
+
 
 const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
+  
 
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+	    
+          
+<Headroom style={{ zIndex: '5', }}>
+    <header className="header">
+    
+    <Link to="/" className="logolink" title="Logo - Back To Home" style={{textDecoration:'none',}}>
+    <span className="logofirst">todd</span> <span className="logocolor">lambert</span>
+    </Link>
+    
+    
+    
+   
+
+   
+    
+<input className="menu-btn" type="checkbox" id="menu-btn" />
+<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+
+            <ul id="menu" className="menu">
+            
+            <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/capabilities" style={{paddingRight:'',}}>
+                Portfolio 
               </Link>
+              </li>
+              
+              
+              <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
+                Resume 
+              </Link>
+              </li>
+              
+              
+               <li className="grad" style={{position:'relative',}}>
+              <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'',}}>
+               Photography 
+              </Link>
+              
+              </li>
+              
+              
+              {/*<li style={{position:'relative',}}>
+              <Link id="vault" className="navbar-item" to="/vault" style={{paddingRight:'50px',}}>
+                The Vault <AiFillBank className="txtshadow" style={{fontSize:'30px', position:'absolute', right:'10px', top:'15px',}}/>
+              </Link>
+              </li>*/}
+              
+            
+            {/* <li className="grad" style={{position:'relative',}}>
+                          <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
+                            About 
+                          </Link>
+                          </li> */}
+              
+              
+              
+              
+              
+              {/* <li>
               <Link className="navbar-item" to="/products">
-                Products
+                How We Do It
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+              </li> */}
+              
+              
+              
+              
+              
+              
+              
+              
+
+
+              {/*<li style={{position:'',}}>
+             
+             <label className="modal-btn grad" htmlFor="modal-toggle" style={{position:'relative', textShadow: '1px 0px 2px white', paddingRight:'',}}>Contact </label> 
+             
+              </li>*/}
+              
+              
+            </ul>
+            
+            
+      
+      
+   </header>
+   
+    <div className="themer"><ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <div className="themeSlide grad-vert">
+            <input
+              type="checkbox" value="None" id="themeSlide" name="check"
+              onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+              checked={theme === 'dark'}
+            />{' '}
+            
+          <label htmlFor="themeSlide" style={{color:'#222', textAlign:'center', padding:'1px',}}>Theme</label></div>
+        )}
+      </ThemeToggler></div>
+      
+      
+      <a href="#topofpage" title="Back To Top" className="back-to-top "><GoArrowUp /></a>
+</Headroom>
+        
+      
+      
     )
   }
 }

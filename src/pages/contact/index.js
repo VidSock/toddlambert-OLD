@@ -3,19 +3,27 @@ import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 
 function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
+  const formData = new FormData()
+
+  for (const key of Object.keys(data)) {
+    formData.append(key, data[key])
+  }
+
+  return formData
 }
 
-export default class Index extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {}
   }
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleAttachment = e => {
+    this.setState({ [e.target.name]: e.target.files[0] })
   }
 
   handleSubmit = e => {
@@ -23,7 +31,6 @@ export default class Index extends React.Component {
     const form = e.target
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
         ...this.state,
@@ -36,12 +43,16 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        <section className="outer section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+
+              <h1>Contact Us</h1>
+
+              
+
               <form
-                name="contact"
+                name="file-upload"
                 method="post"
                 action="/contact/thanks/"
                 data-netlify="true"
@@ -49,18 +60,16 @@ export default class Index extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" value="file-upload" />
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
                     <input name="bot-field" onChange={this.handleChange} />
                   </label>
                 </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
-                  <div className="control">
+
+                <div className="form">
+                <div className="field half first">
                     <input
                       className="input"
                       type={'text'}
@@ -68,14 +77,9 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
+                      placeholder="Name"
                     />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'email'}>
-                    Email
-                  </label>
-                  <div className="control">
+                
                     <input
                       className="input"
                       type={'email'}
@@ -83,32 +87,37 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
+                      placeholder="Email"
                     />
-                  </div>
+                    <input
+                        className="file-input"
+                        type="file"
+                        name="attachment"
+                        onChange={this.handleAttachment}
+                      />
                 </div>
-                <div className="field">
-                  <label className="label" htmlFor={'message'}>
-                    Message
-                  </label>
-                  <div className="control">
+
+                <div className="field half right">
+
                     <textarea
                       className="textarea"
                       name={'message'}
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
+                      placeholder="Message"
                     />
+
+                      
                   </div>
-                </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
-                  </button>
-                </div>
+                  </div>
+                
+                <div className="actionable"><input type="submit" value="Send Message" className="special" /></div>
               </form>
+              
             </div>
           </div>
-        </section>
+        </section>      
       </Layout>
     )
   }
