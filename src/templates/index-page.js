@@ -8,7 +8,7 @@ import BlogRoll from '../components/BlogRoll'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout'
 // import Install from '../components/Install'
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -390,22 +390,30 @@ export const IndexPageTemplate = ({
 
 
 
-<div className="split" style={{display:'flex', padding:'1rem',}}>
+<div className="split" style={{display:'flex', padding:'1rem', position:'relative',}}>
 
     <BlogRoll style={{padding:'1rem',}} />
     
-    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%', position:'sticky', position:'-webkit-sticky',}}>
     
+    <div style={{position:'-webkit-sticky', position:'sticky', }}>
+    <a href="https://twilightscapes.com" target="_blank" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
     <br />
-    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you've never seen them before.<h5>Twilightscapes.com</h5>
+    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
+    <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
     
     <br />
     <br />
+    
+    
+    <a href="https://urbanfetish.com" target="_blank" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
     <br />
-    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn't dare go into, especially at night.<h5>UrbanFetish.com</h5>
+    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
     
+    <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
+    </div>
     </div>
     
     
