@@ -158,23 +158,27 @@ const Gal1Page = () => {
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={10} style={{width:'50%', zIndex:'1', margin:'0 0 1rem 0',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+<a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
 <div style={{padding:'25px',}}><Image alt="Co-worker talks about Todd Lambert" filename="twilightscapes-button.jpg" /></div>
 <p>
 Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
 </p>
 <h5>Twilightscapes.com</h5>
+</a>
 </div>
 </ScrollAnimation>
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={10} style={{width:'50%', zIndex:'1', margin:'0 0 1rem 0',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-
-<div style={{padding:'25px',}}><Image alt="Co-worker talks about Todd Lambert" filename="urban-fetish-button.jpg" /></div>
+<a href="https://urbanfetish.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
+<div style={{padding:'25px',}}>
+<Image alt="Co-worker talks about Todd Lambert" filename="urban-fetish-button.jpg" /></div>
 
 <p>
 Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
 </p>
 <h5>UrbanFetish.com</h5>
+</a>
 </div>
 </ScrollAnimation>
 

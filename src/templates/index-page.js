@@ -397,7 +397,7 @@ export const IndexPageTemplate = ({
     <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%', position:'sticky', position:'-webkit-sticky',}}>
     
     <div style={{position:'-webkit-sticky', position:'sticky', }}>
-    <a href="https://twilightscapes.com" target="_blank" style={{textDecoration:'none', color:'inherit',}}>
+    <a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
     <br />
     Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
@@ -407,7 +407,7 @@ export const IndexPageTemplate = ({
     <br />
     
     
-    <a href="https://urbanfetish.com" target="_blank" style={{textDecoration:'none', color:'inherit',}}>
+    <a href="https://urbanfetish.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
     <br />
     Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
