@@ -518,29 +518,7 @@ export const pageQuery = graphql`
         heading
         subheading
         subsubheading
-        image2 {
-          childImageSharp {
-            fluid(maxWidth: 1600, quality: 64) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-		i2Heading
-		i2Subheading
-		i2Subsubheading
-		i2Subsubheading2
-		
-		 image3 {
-          childImageSharp {
-            fluid(maxWidth: 1600, quality: 64) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
-        }
-		i3Heading
-		i3Subheading
-		i3Subsubheading
-		i3Subsubheading2
+        
 		
       }
     }
