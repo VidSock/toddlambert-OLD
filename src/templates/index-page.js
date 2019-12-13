@@ -394,9 +394,9 @@ export const IndexPageTemplate = ({
 
     <BlogRoll style={{padding:'1rem',}} />
     
-    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%', position:'sticky', position:'-webkit-sticky',}}>
+    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
     
-    <div style={{position:'-webkit-sticky', position:'sticky', }}>
+    <div style={{position:'-webkit-sticky', position:'sticky', top:'30px', }}>
     <a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
     <br />
