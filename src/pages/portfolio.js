@@ -8,7 +8,7 @@ import Image from '../components/Image'
 // import { Link } from 'gatsby'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import GalleryMenu from '../components/GalleryMenu'
-import { FiZoomIn } from 'react-icons/fi'
+// import { FiZoomIn } from 'react-icons/fi'
 // import PopSemi from '../components/PopSemi'
 
 import styled from "styled-components"
@@ -102,7 +102,7 @@ const Gal1Page = () => {
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={1200} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <p>
@@ -115,7 +115,7 @@ My experience has taught me that good design is not created on a spur of the mom
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={1200} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
 <div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
@@ -123,16 +123,168 @@ My experience has taught me that good design is not created on a spur of the mom
 </ScrollAnimation>
 
  </div>
+ 
+ 
+ 
+ 
+ {/* SKILLS TIMELINE */}
+<div className="container">
+<h3 className="logolink" style={{textAlign:'center',}}>
+<span className="logofirst">various</span> <span className="logocolor">hats worn</span>
+</h3>
+    
+</div>
 
+<div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Entrepreneur</h2>
+<p>
+Being a self-starter and self-learner are the basic fundamentals of a natural entrepreneur. I&apos;ve been involved both as a partner and a consultant to many businesses and I am able to see the forest through the trees, while keeping an eye on the bottom-line.
+</p>
+
+</div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ 
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Webmaster</h2>
+<p>
+Back in the day, a webmaster learned that a full tool box was needed for web design and development. I learned UNIX, IIS, TCP/IP, Cpanel, and PHPMyadmin while entertaining myself primarily in the CGI-Bin directory.
+</p>
+
+</div>
+</ScrollAnimation>
+ </div>
+ 
+ 
+ 
+ 
+ <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Designer</h2>
+<p>
+Over the years I&apos;ve spent inordinate amounts of time learning Typography, Space and Composition. Learning is my personal design theory and I still strive to learn something new each day by trying things.
+</p>
+
+</div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+ </div>
+ 
+ 
+ 
+  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ 
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats4.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Developer</h2>
+<p>
+As the Internet became more complicated I immersed myself in different programming languages and countless environments. Learning to adapt design to logic was a major accomplishment and one that I still work at today.
+</p>
+
+</div>
+</ScrollAnimation>
+ </div>
+ 
+ 
+ 
+  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Marketer</h2>
+<p>
+I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at determining what people wanted to see and where. What information or answer they were searching for, became the catalyst of numerous ad campaigns and my mission for my clients.
+</p>
+
+</div>
+</ScrollAnimation>
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+ </div>
+ 
+ 
+ <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
+ 
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+
+<Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
+
+</ScrollAnimation>
+
+
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+<div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+
+<h2>Analyst</h2>
+<p>
+Success online is not simply throwing numbers(visitors) at something. I&apos;ve learned to use site analytics to drive the direction of design and development projects creating a prove-it-or-lose-it type of mantra that defines performance and usability.
+</p>
+
+</div>
+</ScrollAnimation>
+ </div>
+ {/* SKILLS TIMELINE */}
+
+
+
+
+<div className="container">
+<h3 className="logolink" style={{textAlign:'center',}}>
+<span className="logofirst">portfolio</span> <span className="logocolor">spotlight</span>
+</h3>
+    
+</div>
 </section>
 
 
 
 
 <section className="  intro section">
-<div className="zoomer" style={{paddingTop:'0', display:'flex',alignItems:'center', justifyContent:'center',}}>
-      <h4 style={{display:'flex', color:'#fff', fontSize:'100%', textAlign:'center', backgroundColor:'#222', padding:'5px 10px', borderRadius:'10px', border:'1px solid #999', position:'fixed', bottom:'50px', zIndex:'1', opacity:'.9',}}><FiZoomIn style={{fontSize:'150%', position:'relative', top:'0px', left:'-4px',}} />Click To Zoom</h4>
-      </div>
+
+
 
       <div className="container" style={{background:'', padding:'2rem',}}>
       <Gallery
@@ -145,19 +297,9 @@ My experience has taught me that good design is not created on a spur of the mom
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
-<div className="container">
-<h3 className="logolink" style={{textAlign:'center',}}>
-<span className="logofirst">various</span> <span className="logocolor">hats worn</span>
-</h3>
-    
-</div>
 
-<div className="container">
-<h3 className="logolink" style={{textAlign:'center',}}>
-<span className="logofirst">portfolio</span> <span className="logocolor">spotlight</span>
-</h3>
-    
-</div>
+
+
 
 <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
@@ -165,6 +307,9 @@ My experience has taught me that good design is not created on a spur of the mom
 </h3>
     
 </div>
+
+
+
 
 
 
