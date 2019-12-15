@@ -226,7 +226,7 @@ main{min-height: 60vh;}//force v-scroll
   
  [aria-current].logolink, [aria-current].logolink:before  {
   background: none !important;
-  padding: 0; cursor: default !important;
+ cursor: default !important;
   border:none !important;
   }
   
@@ -623,13 +623,16 @@ padding:0 0;
 	font-weight: bold;
 }
 
+.logocolor:after, .logocolor:before, .logocolor{}
 .header .logolink{}
 
 .logolink{
 font-family:Lobster Two; font-size:260%; color:#333; letter-spacing:1px; text-transform:lowercase;
-text-shadow: 0px 1px 4px white;
+text-shadow: 0px 1px 4px #ff0000;
 padding-left:2rem;
 }
+
+
 
 .logofirst{padding-right:8px; position:relative; color:#333;}
 
@@ -643,6 +646,28 @@ padding-left:2rem;
 
 }
 
+
+body.light .logolink{
+text-shadow: 0px 3px 0px #fff;
+}
+body.dark .logolink{
+text-shadow: 1px 5px 0px #000;
+}
+
+body.light .header .logolink{
+text-shadow: 0px 1px 0px #fff;
+}
+body.dark .header .logolink{
+text-shadow: 0px 1px 0px #fff;
+}
+
+body.light .logofirst, body.light .logofirst:before{}
+body.dark .logofirst, body.dark .logofirst:before, body.dark .logocolor:before, body.dark .logocolor:after{color:#fff;}
+
+body.dark .header .logofirst,
+body.dark .header .logofirst:before,
+body.dark .header .logocolor:after,
+body.dark .header .logocolor:before,{color:#222;}
 
 /* menu */
 
@@ -808,7 +833,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 
 .headroom--pinned .header .logo{top:-20px !important;}
-.header .logo{top:0px !important;}
+.header .logolink{top:8px !important;}
 
 .header .menu{height:100vh !important;}
 
@@ -855,6 +880,46 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db754c', end
 color:#fff !important;
 
 }
+
+
+.logocolor{
+
+}
+.logocolor:before{
+	font-size: 120%;
+	top:-10px;
+	left:-15px;
+}
+.logocolor:after{
+	font-size: 120%;
+	top:-10px;
+	right:-14px;
+}
+
+
+.logolink{
+font-family:Lobster Two;
+font-size:200%;
+text-shadow: 0px 1px 4px #ff0000;
+padding-left:2rem;
+}
+
+
+
+.logofirst{padding-right:8px; position:relative; color:#333;}
+
+.logofirst:before{
+	content: ' . ';
+	color: #333;
+	font-size: 120%;
+	position:absolute;
+	top:-10px;
+	left:-10px;
+}
+
+
+
+
 
 }
 
@@ -1066,6 +1131,8 @@ body.dark, body.dark .container{
 }
   
   body.light .container{background-color: #dedede; box-shadow: 0px 0px 12px 0 #adadad;}
+  
+//   .imgbox{box-shadow: 0px 10px 12px 0 #282727 !important;}
   
   body.dark .outer .innerpanel, body.dark .speech  { background-color: #333;}
   body.light .outer .innerpanel, body.light .speech { background-color: #f1f2f7;}

@@ -123,6 +123,11 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 
 
+@media (max-width: 48rem) {
+
+}
+
+
 
 
 

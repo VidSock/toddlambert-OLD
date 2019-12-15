@@ -121,7 +121,7 @@ My experience has taught me that good design is not created on a spur of the mom
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={1200} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden',}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden'}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
 </div>
 </ScrollAnimation>
