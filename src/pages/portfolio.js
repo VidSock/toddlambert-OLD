@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Layout from '../components/Layout'
-import Install from '../components/Install'
+// import Install from '../components/Install'
 import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../components/Gallery'
 import Image from '../components/Image'
@@ -93,7 +93,7 @@ const Gal1Page = () => {
   return (
 	  <CustomBox>
     <Layout>
-    <Install/>
+
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
 <div className="container">

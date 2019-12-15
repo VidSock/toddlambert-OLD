@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Layout from '../../components/Layout'
-import Install from '../../components/Install'
+// import Install from '../../components/Install'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from '../../components/Image'
 import Gallery from '../../components/Gallery'
@@ -112,7 +112,7 @@ const Gal1Page = () => {
   return (
 	  <CustomBox>
     <Layout>
-    <Install/>
+
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
@@ -161,7 +161,7 @@ const Gal1Page = () => {
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={10} style={{width:'50%', zIndex:'1', margin:'0 0 1rem 0',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
+<a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
 <div style={{padding:'25px',}}><Image alt="Co-worker talks about Todd Lambert" filename="twilightscapes-button.jpg" /></div>
 <p>
 Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
@@ -173,7 +173,7 @@ Experience a new style of landscape photography all through the eyes of Todd Lam
 
  <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={10} style={{width:'50%', zIndex:'1', margin:'0 0 1rem 0',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
-<a href="https://urbanfetish.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
+<a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
 <div style={{padding:'25px',}}>
 <Image alt="Co-worker talks about Todd Lambert" filename="urban-fetish-button.jpg" /></div>
 

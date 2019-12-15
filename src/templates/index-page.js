@@ -8,10 +8,10 @@ import BlogRoll from '../components/BlogRoll'
 //  import Gallery1 from '../components/Gallery1'
 import Layout from '../components/Layout-noc'
 // import Install from '../components/Install'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 // import Features from '../components/Features'
 // import BlogRoll from '../components/BlogRoll'
-import ScrollAnimation from 'react-animate-on-scroll'
+// import ScrollAnimation from 'react-animate-on-scroll'
 // import { IoIosArrowDropdownCircle } from 'react-icons/io'
 // import { FaAccessibleIcon, FaRegAddressCard, FaOdnoklassniki, FaBlind } from 'react-icons/fa'
 // import { FaRegAddressCard } from 'react-icons/fa'
@@ -19,7 +19,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 
 // import PopMedical from '../components/PopMedical'
 // import PopSemi from '../components/PopSemi'
-import PopNewsletter from '../components/PopNewsletter'
+// import PopNewsletter from '../components/PopNewsletter'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -139,11 +139,6 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 .image-wrap img {
   width: 100vw;
-/*
-  animation: move 11s ease;
-  animation-direction:alternate-reverse;
-*/
-  position: ;
   z-index:0;
 }
 
@@ -246,7 +241,7 @@ export const IndexPageTemplate = ({
     
     <div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
     
-    <div style={{position:'-webkit-sticky', position:'sticky', top:'30px', }}>
+    <div style={{position:'sticky', top:'30px', }}>
 
 <h3 className="logolink" style={{textAlign:'left', fontSize:'200%',}}>
 <span className="logofirst">todd</span> <span className="logocolor">network</span>
@@ -255,7 +250,7 @@ export const IndexPageTemplate = ({
 
 
 
-    <a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
+    <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
     <br />
     Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
@@ -265,7 +260,7 @@ export const IndexPageTemplate = ({
     <br />
     
     
-    <a href="https://urbanfetish.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
+    <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
     <br />
     Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
