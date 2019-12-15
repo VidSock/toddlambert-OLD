@@ -107,14 +107,16 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
     <section className="about1 outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
     
+    <ScrollAnimation animateIn="bounceInDown" animateOut="bounceInUp" animateOnce={true} delay={10}>
     <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">todd</span> <span className="logocolor">about</span>
 </h3>
 
 </div>
+</ScrollAnimation>
     
-    <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={1000}>
+    <ScrollAnimation animateIn="bounceInUp" animateOut="bounceInDown" animateOnce={true} delay={10}>
       <div className="container" style={{display:'',}}>
         <div className="columns">
 

@@ -115,6 +115,8 @@ const Gal1Page = () => {
     <Install/>
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
+
+<ScrollAnimation animateIn="bounceInDown" animateOut="bounceInUp" animateOnce={true} delay={10}>
 <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">todd</span> <span className="logocolor">photography</span>
@@ -126,6 +128,7 @@ const Gal1Page = () => {
 
 <p>Todd has focused mostly on the western United States where his work represents 14 states so far.</p>
 </div>
+</ScrollAnimation>
 
 
 </section>
