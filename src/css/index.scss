@@ -631,6 +631,7 @@ font-family:Lobster Two; font-size:260%; color:#333; letter-spacing:1px; text-tr
 text-shadow: 0px 1px 4px #ff0000;
 padding-left:2rem;
 font-weight: normal;
+font-size:240%;
 }
 
 
@@ -845,31 +846,10 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 .header ul li label{padding-left:30px !important;}
 
 
-.headroom--pinned:before{
-    content:('');
-    position:absolute;
-    left:0;
-    top:-24px;
-    width: 0px;
-      height: 0px;
-border-style: solid;
-border-width: 24px 0 0 24px;
-border-color: transparent transparent transparent transparent;
-z-index: -1;
-}
 
 
-.headroom--pinned:after{
-    content:('');
-    position:absolute;
-    left:-24px;
-    bottom:-24px;
-    width: 0px;
-      height: 0px;
-      border-left: 24px solid transparent;
-      border-right: 24px solid transparent;
-      border-top: 24px solid transparent;
-}
+
+
 
 [aria-current] {
 background: #db754c;
@@ -900,7 +880,7 @@ color:#fff !important;
 
 .logolink{
 font-family:Lobster Two;
-font-size:240%;
+font-size:190%;
 text-shadow: 0px 1px 4px #ff0000;
 padding-left:2rem;
 line-height: 100%;
