@@ -438,7 +438,7 @@ export const IndexPageTemplate = ({
     
     
     <div className="outer">
-    <Contact className="container" />
+    <Contact className="container contactform" />
 </div>
 
 

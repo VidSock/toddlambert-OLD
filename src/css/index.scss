@@ -1145,7 +1145,7 @@ body.light {
   color: #333; }
 
 body.dark a {
-  color: $primary; }
+  color: #eee }
 
 body.light a {
   color: $primary; }
@@ -1322,14 +1322,97 @@ body.dark .no-app{display: none !important;}
 
 
 
-
+	
 @media print {
    body {
       color: #000;
       background: #fff;
    }
 
-#left, #right, .headroom-wrapper, main picture{display: none !important; height: 0px;}
+#left, #right, main picture{display: none !important; height: 0px;}
+
+/* body stuff */
+	body{
+	background-color:#FFF;
+	font-family:helvetica, verdana, arial, sans-serif;
+	color:#000;
+	font-size:10.2px !important;
+padding-top:5px !important;
+	}
+	
+	#screen{
+	display:none;
+	}
+
+* {box-shadow: none !important;}
+	#menu{visibility:hidden;}
+	.header #menu:after{content:"Phone 228-239-6088"; position:absolute; right:20px; visibility:visible; text-align:right;}
+	
+main .animated, footer{display: none !important;}
+	
+/* Body Stuff */
+
+/* text formatting */
+
+	p {
+	margin:0px 0px 3px 0px;
+	padding:0px;
+	}	
+
+/*
+	h1 {
+	font-size: 12px;
+	font-weight:bold;
+	color:#000;
+	margin:3px;
+	padding:0;
+	}
+*/
+
+	h3 {
+	color:#000;
+	font-weight:bold;
+	font-size:12px;
+	}
+	
+	h2 {
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+	padding: 0px;
+	margin: 15px 0 10px 0;
+	border-bottom:2px solid #000;
+	}
+	
+	a{ color: #000; text-decoration:none; padding-bottom:1px;}
+	a:hover { color: #000; text-decoration:underline; }
+	
+	
+	ul{
+	margin:4px 0 4px 25px;
+	padding:0;
+	}	
+	
+/* text formatting */	
+
+
+
+
+
+h2.todd-headline{font-size:16px;}
+
+.custom-header{padding:0 !important; margin:-30px 0 0 0 !important;}
+
+article {
+/* margin-top:-20px !important; */
+border: 0px solid #bfb4b4 !important;
+box-shadow: 0px 0px 0px 0px rgba(138, 138, 138, 0.5) !important;
+margin:20px 0 0 0 !important;
+padding:0 !important;
+}
+
+#colophon, .copyright, #printbutton, .location{display: none !important;}
+
 
 }
 
