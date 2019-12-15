@@ -6,7 +6,7 @@ import Image from '../components/Image';
 import BlogRoll from '../components/BlogRoll'
 // import Intro from '../components/intro-home'
 //  import Gallery1 from '../components/Gallery1'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout-noc'
 // import Install from '../components/Install'
 import { Link } from 'gatsby'
 // import Features from '../components/Features'

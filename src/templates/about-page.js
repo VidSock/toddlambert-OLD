@@ -7,7 +7,7 @@ import Contact from '../components/Contact-inc'
 import Content, { HTMLContent } from '../components/Content'
 // import { GiPlainArrow } from 'react-icons/gi'
 // import { GoQuote } from 'react-icons/go'
-import Install from '../components/Install'
+// import Install from '../components/Install'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 import styled from 'styled-components'
@@ -16,7 +16,7 @@ const CustomBox = styled.div`
 
 /*
 .intro:before{
-	content: "About Twilightscapes";
+	content: "About Todd";
 position:absolute;
 display: flex;
 align-items: center;
@@ -150,7 +150,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <Contact />
 </ScrollAnimation>
        
-      <Install/>
+
       
     </section>
   )
