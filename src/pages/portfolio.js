@@ -24,11 +24,14 @@ justify-content: center;
 font-size:350%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 }
 
+
+
+
 .speech:after {
 	content: '';
 position: absolute;
 top: 30%;
-right: -18px;
+right: -58px;
 width: 0;
 height: 0;
 	border: 60px solid transparent;
@@ -41,6 +44,7 @@ height: 0;
 
 @media (max-width: 48rem) {
 .intro:before{font-size:200%;}
+.speech:after {right: -28px;}
 }
 
 @media (hover: hover) {
@@ -147,7 +151,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent',}} />
 
@@ -160,9 +164,9 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  
  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
-<Image alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
 
 </ScrollAnimation>
 
@@ -194,9 +198,9 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
-<Image alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
+<Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
 
 </ScrollAnimation>
  </div>
@@ -205,7 +209,7 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  
   <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats4.png" style={{borderColor:'transparent',}} />
 
@@ -238,7 +242,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
 
@@ -248,7 +252,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
  
  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}}>    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
 

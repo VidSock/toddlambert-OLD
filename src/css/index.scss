@@ -509,6 +509,8 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s;}
      position:relative;
     }
     
+
+    
 /*
     input.special:hover{
 	background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
@@ -943,7 +945,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 body.dark .outer:after, body.light .outer:after{content: (''); background-image: url(''); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
 
 
-
+    body.dark .color Img{filter: invert(82%) sepia(85%) saturate(0%) hue-rotate(138deg) brightness(128%) contrast(60%);}
 
 // body.dark .about, body.light .about {background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");  background-position:fixed; animation: fadeIn 7s; background-position: right bottom;}
 
@@ -1060,9 +1062,10 @@ body.dark .themeSlide input[type=checkbox] + label {
 body.dark, body.dark .container{
   background-color: #333;
   color: #f9f9fa; 
-  box-shadow: inherit;}
+  box-shadow: 0px 0px 12px 0 #282727;
+}
   
-  body.light .container{background-color: #dedede;}
+  body.light .container{background-color: #dedede; box-shadow: 0px 0px 12px 0 #adadad;}
   
   body.dark .outer .innerpanel, body.dark .speech  { background-color: #333;}
   body.light .outer .innerpanel, body.light .speech { background-color: #f1f2f7;}
