@@ -26,7 +26,9 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 
 h2{color:#dd4000}
 
-body.dark, body.dark .container{ color:#ff0000 !important;}
+
+ body.dark, body.dark .container{background-color:#eee;}
+
 .outer .container{width:100%; height:auto; margin:1rem auto;}
 
 .imgbox img{border-radius:12px; border:0px solid #000;}

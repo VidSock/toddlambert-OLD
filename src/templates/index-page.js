@@ -183,8 +183,10 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
   .content{flex-direction:column !important;}
   .content .stack{width:100% !important; margin:0 !important;}
   .pitch{font-size:250% !important; text-align:center;}
-  .split{display:block !important;}
-  
+  .split {display:block !important; width:100% !important; }
+  .split div{max-width:100% !important;}
+  .sidebar{margin:2rem 0;}
+  .sidebar .logolink{text-align:center !important;}
 }
 
 
@@ -395,11 +397,19 @@ export const IndexPageTemplate = ({
 
 <div className="split" style={{display:'flex', padding:'1rem', position:'relative',}}>
 
-    <BlogRoll style={{padding:'1rem',}} />
+    <BlogRoll style={{padding:'',}} />
     
-    <div style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+    <div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
     
     <div style={{position:'-webkit-sticky', position:'sticky', top:'30px', }}>
+
+<h3 className="logolink" style={{textAlign:'left', fontSize:'200%',}}>
+<span className="logofirst">todd</span> <span className="logocolor">network</span>
+</h3>
+
+
+
+
     <a href="https://twilightscapes.com" target="_blank" rel="noopener" style={{textDecoration:'none', color:'inherit',}}>
     <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
     <br />

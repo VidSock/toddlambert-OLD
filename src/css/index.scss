@@ -619,7 +619,7 @@ padding:0 0;
 	font-size: 120%;
 	position:absolute;
 	top:-10px;
-	right:-18px;
+	right:-15px;
 	font-weight: bold;
 }
 
@@ -630,11 +630,12 @@ padding:0 0;
 font-family:Lobster Two; font-size:260%; color:#333; letter-spacing:1px; text-transform:lowercase;
 text-shadow: 0px 1px 4px #ff0000;
 padding-left:2rem;
+font-weight: normal;
 }
 
 
 
-.logofirst{padding-right:8px; position:relative; color:#333;}
+.logofirst{padding-right:12px; position:relative; color:#333;}
 
 .logofirst:before{
 	content: ' . ';
@@ -648,10 +649,10 @@ padding-left:2rem;
 
 
 body.light .logolink{
-text-shadow: 0px 3px 0px #fff;
+text-shadow: 0px 1px 0px #fff;
 }
 body.dark .logolink{
-text-shadow: 1px 5px 0px #000;
+text-shadow: 0px 3px 0px #000;
 }
 
 body.light .header .logolink{
@@ -901,7 +902,7 @@ color:#fff !important;
 font-family:Lobster Two;
 font-size:240%;
 text-shadow: 0px 1px 4px #ff0000;
-padding-left:1rem;
+padding-left:2rem;
 line-height: 100%;
 }
 
