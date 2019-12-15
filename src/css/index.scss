@@ -833,7 +833,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 
 .headroom--pinned .header .logo{top:-20px !important;}
-.header .logolink{top:8px !important;}
+.header .logolink{ height:60px;}
 
 .header .menu{height:100vh !important;}
 
@@ -881,27 +881,28 @@ color:#fff !important;
 
 }
 
-
+.header .logolink{display: inline-block; margin-top:8px;}
 .logocolor{
 
 }
 .logocolor:before{
 	font-size: 120%;
-	top:-10px;
-	left:-15px;
+	top:0;
+	left:-12px;
 }
 .logocolor:after{
 	font-size: 120%;
-	top:-10px;
+	top:0;
 	right:-14px;
 }
 
 
 .logolink{
 font-family:Lobster Two;
-font-size:200%;
+font-size:240%;
 text-shadow: 0px 1px 4px #ff0000;
-padding-left:2rem;
+padding-left:1rem;
+line-height: 100%;
 }
 
 
@@ -913,7 +914,7 @@ padding-left:2rem;
 	color: #333;
 	font-size: 120%;
 	position:absolute;
-	top:-10px;
+	top:0;
 	left:-10px;
 }
 
