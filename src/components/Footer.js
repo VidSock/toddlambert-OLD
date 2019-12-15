@@ -52,7 +52,7 @@ const Footer = class extends React.Component {
 
 
 
-<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Twilightscapes</div>
+<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert</div>
         </div>
       </footer>
       </ScrollAnimation>
