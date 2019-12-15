@@ -175,16 +175,16 @@ background:linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc
 
 @media (max-width: 48rem) {
 
-.image-wrap {height:auto !important; min-height:300px !important;}
+  .image-wrap {height:auto !important; min-height:300px !important;}
   .image-wrap h1.boom{font-size:250% !important;}
   .image-wrap h2.boom{font-size:180% !important;}
   .image-wrap h3.boom{font-size:280% !important;}
   .intro:before{font-size:150% !important}
   .content{flex-direction:column !important;}
-  .content .stack{width:100% !important; margin:0 !important;}
+  .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
   .pitch{font-size:250% !important; text-align:center;}
   .split {display:block !important; width:100% !important; }
-  .split div{max-width:100% !important;}
+  .split div{max-width:100% !important; background:tranparent !important;}
   .sidebar{margin:2rem 0;}
   .sidebar .logolink{text-align:center !important;}
 }

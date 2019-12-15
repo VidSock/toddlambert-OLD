@@ -27,7 +27,7 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 h2{color:#dd4000}
 
 
- body.dark, body.dark .container{background-color:#eee;}
+
 
 .outer .container{width:100%; height:auto; margin:1rem auto;}
 
@@ -42,7 +42,7 @@ p{line-height:150%;}
 
 body.light .speech p span{color:#fff;}
 
-.outer{padding:0 11%; border:0px solid red; margin-top:2rem;}
+.outer{padding:0 11%; border:0px solid red; padding-top:2rem !important;}
 .split div:first-child{padding-right:1rem; border:0px solid yellow;}
 .split div:last-child{padding-left:1rem; border:0px solid blue;}
 
@@ -73,9 +73,11 @@ body.light .speech p span{color:#fff;}
 .split.nowrap div.imgbox{width:30vw !important; margin-left:1rem !important;}
 
 
+
 .intro:before{font-size:200%;}
 
-
+// body.dark, body.dark .container{background-color:#fff !important;}
+body.dark .container, .outer, .intro, .split{background-color:#eee !important;}
 
 
 
@@ -112,7 +114,7 @@ const Resume = () => {
  
 
 
-<div className="primary cf " style={{color:'#444',}}>
+<div className="primary cf " style={{color:'#444', }}>
 
 
 	

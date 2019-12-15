@@ -919,7 +919,8 @@ line-height: 100%;
 	left:-10px;
 }
 
-
+.content, .container{ box-shadow: none !important;}
+body.light #blogroll{background-color:transparent !important;}
 
 
 
