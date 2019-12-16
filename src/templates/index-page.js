@@ -243,9 +243,12 @@ export const IndexPageTemplate = ({
     
     <div style={{position:'sticky', top:'30px', }}>
 
-<h3 className="logolink" style={{textAlign:'left', fontSize:'200%', marginBottom:'1rem',}}>
+
+<div className="container content" style={{margin:'0 0 1rem 0', padding:'0 10px 0 0', borderRadius:'10px',}}>
+<h3 className="logolink" style={{textAlign:'center', fontSize:'200%',}}>
 <span className="logofirst">todd</span> <span className="logocolor">network</span>
 </h3>
+</div>
 
 
 

@@ -112,7 +112,6 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">todd</span> <span className="logocolor">about</span>
 </h3>
-
 </div>
 </ScrollAnimation>
     
