@@ -582,8 +582,8 @@ padding:0 0;
   display: block;
   padding: 10px 30px;
   text-decoration: none;
-  color:#222 !important;
-  text-shadow: 1px 0px 2px white;
+  text-shadow: 1px 0px 2px #333;
+//   color:#333 !important;
 }
 
 .header li a:hover,
@@ -737,8 +737,11 @@ div.column{ padding:1rem 0rem;}
 
 .header .menu-btn:checked ~ .menu {
   max-height: 60vh;
-  background-color: #222;
+  background-color: #666;
+  border-radius:20px;
+  margin-top:10px;
 }
+.header .menu-btn:checked ~ .menu li {border-bottom: 1px solid #999;}
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
@@ -846,7 +849,7 @@ input:matches([type="checkbox"]){color:#ff0000 !important;}
 
 .header ul li label{padding-left:30px !important;}
 
-
+body.light .header li a{color:#fff !important;}
 
 
 
@@ -948,6 +951,9 @@ body.light #blogroll{background-color:transparent !important;}
     display: block;
     padding:1rem;
     border-right:1px solid #999;
+    color:#222 !important;
+    text-shadow: 0px 1px 0 #fff !important;
+    
   }
   
 
@@ -1132,7 +1138,7 @@ body.dark a {
 body.light a {
   color: $primary; }
 
-body.light .header li a, body.dark .header li a, body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a  {
+/* body.light .header li a, body.dark .header li a, */ body.light footer, body.light footer a, body.dark footer a, body.dark .outer a, body.light .outer a  {
   color: #fff; }
   
     body.light .header ul li .content a, body.light .content a{color:inherit;}
