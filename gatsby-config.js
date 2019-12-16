@@ -8,6 +8,16 @@ module.exports = {
       'World renown night photographer Todd Lambert and his web development business',
   },
   plugins: [
+	  
+	  
+	      {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["UA-89654528-2"],
+      },
+    },
+    
+    
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     `gatsby-plugin-styled-components`,
@@ -86,15 +96,7 @@ module.exports = {
     },
     
     
-    
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        TrackingId: 'UA-49869143-1',
-        respectDNT: false,
-      }
-    },
-    
+
     
     
     'gatsby-plugin-dark-mode',
