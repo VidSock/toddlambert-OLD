@@ -105,11 +105,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ToddLambert`,
-        short_name: `ToddLambert`,
+        name: `Todd Lambert`,
+        short_name: `Todd Lambert`,
         start_url: `/`,
         background_color: `#222`,
-        theme_color: `#FAE042`,
+        theme_color: `#dc3907`,
         display: `standalone`,
         icon: `src/img/todd-icon.svg`,
       },
