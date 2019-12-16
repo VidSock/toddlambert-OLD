@@ -280,7 +280,7 @@ export const IndexPageTemplate = ({
     <div className="outer">
     <Contact className="container contactform" />
 </div>
-
+<br />
 
 
     

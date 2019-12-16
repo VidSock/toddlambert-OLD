@@ -99,11 +99,10 @@ const Gal1Page = () => {
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
-<div className="container">
+<div className="container" style={{margin:'1rem',}}>
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">todd</span> <span className="logocolor">portfolio</span>
 </h3>
-
 </div>
 
 
