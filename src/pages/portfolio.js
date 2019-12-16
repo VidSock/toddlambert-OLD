@@ -99,17 +99,19 @@ const Gal1Page = () => {
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
-<div className="container" style={{margin:'1rem',}}>
+ <ScrollAnimation animateIn="bounceInDown" animateOut="bounceOutUp" animateOnce={false} delay={1200} style={{ zIndex:'1',}}> 
+<div className="container" style={{margin:'1rem 8%',}}>
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">todd</span> <span className="logocolor">portfolio</span>
 </h3>
 </div>
+</ScrollAnimation>
 
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={1200} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
+<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative', boxShadow: '0px 0px 5px 0px black', }}>
 
 <p>
 <span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
@@ -134,12 +136,13 @@ My experience has taught me that good design is not created on a spur of the mom
  
  
  {/* SKILLS TIMELINE */}
+ <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
 <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">various</span> <span className="logocolor">hats worn</span>
 </h3>
-    
 </div>
+</ScrollAnimation>
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
@@ -276,13 +279,13 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 
-
+ <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
 <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">portfolio</span> <span className="logocolor">spotlight</span>
 </h3>
-    
 </div>
+</ScrollAnimation>
 </section>
 
 
@@ -306,14 +309,13 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 
-
+ <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
 <div className="container">
 <h3 className="logolink" style={{textAlign:'center',}}>
 <span className="logofirst">list</span> <span className="logocolor">of clients</span>
 </h3>
-    
 </div>
-
+</ScrollAnimation>
 
 
 
