@@ -41,6 +41,9 @@ height: 0;
 	 z-index:2;
 }
 
+@media (min-width: 50rem) {
+.speech1{padding:20px 50px !important;}
+}
 
 @media (max-width: 48rem) {
 .intro:before{font-size:200%;}
@@ -113,7 +116,7 @@ const Gal1Page = () => {
 <span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', top:'-5px', left:'-10px',}}>&#10077;</span><br />
 <span className="txtshadow-header" style={{fontSize:'500%', color:'#ccc', position:'absolute', bottom:'-15px', right:'-10px',}}>&#10078;</span><br />
 
-My experience has taught me that good design is not created on a spur of the moment, nor does it come naturally . Good design is a thorough process of collaboration between multiple teams and the site visitors. Design is asking questions and identifying a problem.
+My experience has taught me that good design is not created on a spur of the moment, nor does it come naturally. Good design is a thorough and interative process with site visitors in mind foremost. Good design is identifying a problem for those visitors and removing that problem.
 </p>
 <h5>- Todd Lambert</h5>
 </div>
