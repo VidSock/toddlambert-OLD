@@ -111,7 +111,7 @@ module.exports = {
         background_color: `#222`,
         theme_color: `#FAE042`,
         display: `standalone`,
-        icon: `src/img/tw-logo-white.svg`,
+        icon: `src/img/todd-icon.svg`,
       },
     },
     
