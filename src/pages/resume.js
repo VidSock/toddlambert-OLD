@@ -24,6 +24,8 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 */
 
 
+.edu li{margin:2rem 0;}
+
 h2{color:#dd4000}
 // .headroom--unfixed header{width:100%; margin:0 auto; border:0px solid red !important;}
 
@@ -141,7 +143,7 @@ const Resume = () => {
 
 <h2 className="todd-headline">Education</h2>
 
-<ul>
+<ul className="edu">
 <li><strong>Cal State University Fullerton</strong><br />
 Web Design and Development Degree</li>
 
