@@ -1342,24 +1342,27 @@ body.dark .no-app{display: none !important;}
 
 
 
-
+.printonly{display: none;}
 
 	
 @media print {
    body {
       color: #000;
-      background: #fff;
+      background: #fff !important;
+      background-image: none !important;
    }
 
 #left, #right, main picture{display: none !important; height: 0px;}
 
 /* body stuff */
 	body{
-	background-color:#FFF;
 	font-family:helvetica, verdana, arial, sans-serif;
 	color:#000;
 	font-size:10.2px !important;
 padding-top:5px !important;
+padding-left:5px !important;
+padding-right:5px !important;
+margin: 0 !important;
 	}
 	
 	#screen{
@@ -1369,8 +1372,12 @@ padding-top:5px !important;
 * {box-shadow: none !important;}
 	#menu{visibility:hidden;}
 	.header #menu:after{content:"Phone 228-239-6088"; position:absolute; right:20px; visibility:visible; text-align:right;}
+	.headroom{position:absolute !important; top:0 !important;}
+	.headroom{display: none !important;}
 	
-main .animated, footer{display: none !important;}
+ .animated, footer, .back-to-top, .noprint, .installer, .modal-container, .about:after {display: none !important;}
+ .printonly{display: block !important;}
+ .edu li{margin:1rem 0 !important;}
 	
 /* Body Stuff */
 
@@ -1433,7 +1440,7 @@ margin:20px 0 0 0 !important;
 padding:0 !important;
 }
 
-#colophon, .copyright, #printbutton, .location, .noprint, footer{display: none !important;}
+// #colophon, .copyright, #printbutton, .location, footer{display: none !important;}
 
 
 }

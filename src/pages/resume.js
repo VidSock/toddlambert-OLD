@@ -109,15 +109,24 @@ const Resume = () => {
       
   
 <section className="about outer intro section" style={{paddingTop:'0', overflow:'hidden',}}>
-      
+
+
+    
+
+
+
 
 
 <div className="split content1 container1" style={{display:'flex', justifyContent:'center', alignItems:'', position:'relative', width:'100%', margin:'0 auto',}}>
 
- 
 
 
 <div className="primary cf " style={{color:'#444', }}>
+
+<h3 className="logotype printonly" style={{textAlign:'left', fontSize:'250%', height:'50px',}}>
+Lambert
+</h3>
+
 
 
 	
@@ -164,6 +173,8 @@ High School General Courses - Diploma</li>
 
 
 <div className="secondary cf p-left" style={{color:'#444',}}>
+<h3 className="printonly" style={{textAlign:'right', height:'50px', fontSize:'150%',}}>(228) 239-6088
+</h3>  
 	
 <h2 className="todd-headline">Professional Experience</h2>
 
