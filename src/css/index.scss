@@ -609,8 +609,8 @@ padding:0 0;
 	color: #333;
 	font-size: 120%;
 	position:absolute;
-	top:-10px;
-	left:-15px;
+	top:-20%;
+	left:-12%;
 	font-weight: bold;
 }
 .logocolor:after{
@@ -618,36 +618,70 @@ padding:0 0;
 	color: #333;
 	font-size: 120%;
 	position:absolute;
-	top:-10px;
-	right:-17px;
+	top:-20%;
+	right:-15%;
 	font-weight: bold;
 }
 
 .logocolor:after, .logocolor:before, .logocolor{}
-.header .logolink{}
+
 
 .logolink{
-font-family:Lobster Two; font-size:260%; color:#333; letter-spacing:1px; text-transform:lowercase;
-text-shadow: 0px 1px 4px #ff0000;
-padding-left:2rem;
+font-family:Lobster Two;
+color:#333;
+letter-spacing:1px;
+text-transform:lowercase;
+// padding-left:2rem;
 font-weight: normal;
-font-size:240%;
-padding-top:4px;
+// padding-top:4px;
 }
 
+.header .logolink{font-size:240%; text-shadow: 0px 1px 4px #ff0000;}
 
 
-.logofirst{padding-right:10px; position:relative; color:#333;}
+
+
+.logofirst{padding-right:6px; position:relative; color:#333;}
 
 .logofirst:before{
 	content: ' . ';
 	color: #333;
-	font-size: 120%;
+// 	font-size: 120%;
 	position:absolute;
-	top:-10px;
-	left:-12px;
+// 	top:-10px;
+	left:-10%;
 
 }
+
+
+
+.logotype{
+font-family:Lobster Two;;
+color:$primary;
+letter-spacing:1px;
+text-transform:lowercase;
+font-weight: normal;
+position:relative;
+text-shadow: 0px 1px 0px #fff;
+}
+.logotype:before{
+	content: '.todd {';
+	color: #333;
+	letter-spacing:1px;
+}
+.logotype:after{
+	content: '}';
+	color: #333;
+	margin-left:1%;
+}
+body.dark .logotype{}
+body.dark .logotype:before, body.dark .logotype:after{color:#fff; text-shadow: 0px 1px 0px $primary;}
+
+
+
+
+
+
 
 
 body.light .logolink{
@@ -866,10 +900,9 @@ color:#fff !important;
 
 }
 
-.header .logolink{display: inline-block; margin-top:5px;}
-.logocolor{
 
-}
+
+/*
 .logocolor:before{
 	font-size: 120%;
 	top:0;
@@ -880,29 +913,21 @@ color:#fff !important;
 	top:0;
 	right:-14px;
 }
+*/
 
 
-.logolink{
-font-family:Lobster Two;
-font-size:200%;
-text-shadow: 0px 1px 4px #ff0000;
+.header .logolink{
+	display: inline-block; margin-top:5px;
+	font-size:200%;
 padding-left:1.5rem;
-line-height: 100%;
-padding-top:8px;
+text-shadow: 0px 1px 4px #ff0000;
+// line-height: 100%;
+padding-top:2px;
 }
 
 
 
-.logofirst{padding-right:8px; position:relative; color:#333;}
 
-.logofirst:before{
-	content: ' . ';
-	color: #333;
-	font-size: 120%;
-	position:absolute;
-	top:0;
-	left:-10px;
-}
 
 .content, .container{ box-shadow: none !important;}
 body.light #blogroll{background-color:transparent !important;}
@@ -998,14 +1023,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
  body.dark{
 background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='#000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
-body.dark .outer:after, body.light .outer:after{content: (''); background-image: url(''); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 6s; }
+body.dark .outer:after, body.light .outer:after{content: (''); background-image: url(''); height: 100vh; width:100%; background-size: cover; position:fixed; top:0; left:0; z-index:-1;/*  animation: fadeIn 6s; */ }
 
 
     body.dark .color Img{filter: invert(82%) sepia(85%) saturate(0%) hue-rotate(138deg) brightness(128%) contrast(60%);}
 
 // body.dark .about, body.light .about {background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2319181a' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");  background-position:fixed; animation: fadeIn 7s; background-position: right bottom;}
 
-body.dark .about:after, body.light .about:after{content: (''); background-image: url('../img/resume-bg1.png'); height: 100vh; width:100%; background-size: cover; background-position: center top; position:fixed; top:0; left:0; z-index:-1; animation: fadeIn 4s; }
+body.dark .about:after, body.light .about:after{content: (''); background-image: url('../img/resume-bg1.png'); height: 100vh; width:100%; background-size: cover; background-position: center top; position:fixed; top:0; left:0; z-index:-1;/*  animation: fadeIn 4s; */ }
 
 
 
@@ -1408,7 +1433,7 @@ margin:20px 0 0 0 !important;
 padding:0 !important;
 }
 
-#colophon, .copyright, #printbutton, .location{display: none !important;}
+#colophon, .copyright, #printbutton, .location, .noprint, footer{display: none !important;}
 
 
 }

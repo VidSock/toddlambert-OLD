@@ -118,8 +118,8 @@ const Gal1Page = () => {
 
 <ScrollAnimation animateIn="bounceInDown" animateOut="bounceInUp" animateOnce={true} delay={10}>
 <div className="container">
-<h3 className="logolink" style={{textAlign:'center',}}>
-<span className="logofirst">todd</span> <span className="logocolor">photography</span>
+<h3 className="logotype" style={{textAlign:'center', fontSize:'200%',}}>
+Photography
 </h3>
 
 <p>Todd Lambert is a new breed of photographer who focuses on photographing remote locations such as graveyards and abandoned places at night. He thrives on the “butterflies” feeling you get when you’re somewhere that you’re not supposed to be. In many cases that is closer to the truth than you would think.</p>

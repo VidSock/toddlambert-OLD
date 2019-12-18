@@ -74,7 +74,12 @@ export default class Contact extends React.Component {
                 onSubmit={this.handleSubmit}
                 id="contact-inc-form"
               >
-                <h3 style={{padding: '.5rem 0', textAlign: 'center', fontSize: '150%',}}>Contact Todd<br /><span style={{fontSize: '80%', display: 'none',}}>Please fill out the form below:</span></h3>
+
+<h2 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
+Contact
+</h2>
+
+               
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 
                 <div hidden>

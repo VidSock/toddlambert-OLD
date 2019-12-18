@@ -2,7 +2,8 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Contact from '../components/Contact-inc'
-
+import { MdPictureAsPdf } from 'react-icons/md'
+// import { FiCommand } from 'react-icons/fi'
 
 
 import ScrollAnimation from 'react-animate-on-scroll'
@@ -128,33 +129,34 @@ const Resume = () => {
 
 <p>Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.</p>
 
-<p>Experienced in many industries, including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and Internet.</p>
+<p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
 
   
 <h2 className="todd-headline">Proficiency</h2>
 
-<p>Responsive Design, CSS3, graceful degradation, Jquery, modern grid layouts, object oriented CSS, Wordpress and other CMS including TeamSite, HTML emails, analytics, SEO, user interface design, information architecture, web navigation, icon creation, web graphics, cross-platform and cross-browser issues, web template creation &amp; content management system integrations.</p>
+<p>Veteran WordPress Theme/Plugin Developer <br />React JS Frontend Designer/Developer</p>
 
-<p>Professional level expertise with Adobe Creative Suite. Comfortable in both ASP and PHP environments as well as most major javascript libraries.</p>
+<p>Responsive, Reactive, Adaptive Design, progressive enhancement, PWA development, object oriented CSS animation.</p> 
 
+<p>Analytics, SEO, UI design, Information Architecture &amp; Content Management System integrations. Photo and Video production. </p>
 
-<p><strong>I prefer WordPress, PHP, jQuery and Macs.</strong></p>
+<p><strong>I prefer: JAM stack, React, Gatsby, Canon, Subaru and my Mac.</strong></p>
 
-
+<br />
 <h2 className="todd-headline">Education</h2>
 
 <ul className="edu">
 <li><strong>Cal State University Fullerton</strong><br />
-Web Design and Development Degree</li>
+Web Design and Development - Degree</li>
 
 <li><strong>Coastline Community College</strong><br />
-Quality Assurance Degree</li>
+Quality Assurance - Degree</li>
 
 <li><strong>Golden West College</strong><br />
-Business Management</li>
+Business Management - Degree</li>
 
 <li><strong>Huntington Beach High School</strong><br />
-High School Diploma</li>
+High School General Courses - Diploma</li>
 </ul>
 
 	
@@ -194,11 +196,27 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
 </div>
 
  </div>
+ 
+ <br />
+<br />
    
+   <div className="noprint" style={{ display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',}}>
+   
+   <a className="grad special" style={{textAlign: 'center', padding:'.4rem 2rem', textDecoration: 'none', color:'#fff',}} href="/todd-lambert-resume.pdf">Download &nbsp;<MdPictureAsPdf /></a>
+   
+   <div style={{color:'#222', padding:'10px 0 0 0', textAlign:'center',}}>
+   or<br /><br />
+  Type <span style={{padding:'5px 8px', width:'40px', height:'40px', border:'1px solid', borderRadius:'5px',}}>&#8984;</span> + <span style={{padding:'5px 10px', width:'40px', height:'40px', border:'1px solid', borderRadius:'5px',}}>P</span> to PRINT
+   </div>
+   
+   </div>
 
 
+
+<br />
+<br />
     
-<ScrollAnimation animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<ScrollAnimation className="noprint" animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
     <Contact />
 </ScrollAnimation>
       

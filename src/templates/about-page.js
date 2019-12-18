@@ -109,9 +109,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     
     <ScrollAnimation animateIn="bounceInDown" animateOut="bounceInUp" animateOnce={true} delay={10}>
     <div className="container">
-<h3 className="logolink" style={{textAlign:'center',}}>
-<span className="logofirst">todd</span> <span className="logocolor">about</span>
-</h3>
+<h2 className="logotype" style={{textAlign:'center', fontSize:'200%',}}>
+about
+</h2>
 </div>
 </ScrollAnimation>
     
