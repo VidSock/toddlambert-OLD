@@ -215,10 +215,7 @@ Responsible for site architecture, design, graphics, programming, copywriting/ed
    
    <a className="grad special" style={{textAlign: 'center', padding:'.4rem 2rem', textDecoration: 'none', color:'#fff',}} href="/todd-lambert-resume.pdf">Download &nbsp;<MdPictureAsPdf /></a>
    
-   <div style={{color:'#222', padding:'10px 0 0 0', textAlign:'center',}}>
-   or<br /><br />
-  Type <span style={{padding:'5px 8px', width:'40px', height:'40px', border:'1px solid', borderRadius:'5px',}}>&#8984;</span> + <span style={{padding:'5px 10px', width:'40px', height:'40px', border:'1px solid', borderRadius:'5px',}}>P</span> to PRINT
-   </div>
+
    
    </div>
 

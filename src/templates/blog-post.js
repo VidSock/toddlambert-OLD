@@ -5,6 +5,16 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import styled from 'styled-components'
+
+const CustomBox = styled.div`
+.taglist{display:flex; margin:.5rem 0;}
+.taglist li{display:flex; flex-wrap: nowrap;/*  padding:.2rem .5rem; border:1px dotted; border-radius:7px; */ margin:0 .5rem 1rem 0;}
+
+.taglist li:before{content:'{ '; }
+.taglist li:after{content:' }'; }
+
+`
 
 export const BlogPostTemplate = ({
   content,
@@ -17,14 +27,14 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section intro">
+    <section className="section outer intro">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             
             <PostContent content={content} />
-<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+<h1 className="title is-size-2 has-text-weight-bold1 is-bold-light">
 {title}</h1>
             <p>{description}</p>
             {tags && tags.length ? (
@@ -58,6 +68,7 @@ const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
+	  <CustomBox>
     <Layout>
       <BlogPostTemplate
         content={post.html}
@@ -76,6 +87,7 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
+    </CustomBox>
   )
 }
 
